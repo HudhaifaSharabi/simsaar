@@ -9,6 +9,7 @@ app_license = "mit"
 # ------------------
 
 # required_apps = []
+app_include_css = "/assets/simsaar/css/simsaar.css"
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
