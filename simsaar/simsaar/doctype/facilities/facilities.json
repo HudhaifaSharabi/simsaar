@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-22 02:10:47.211385",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "facilitie_name",
+  "property_type",
+  "column_break_pgmz",
+  "status",
+  "price",
+  "section_break_gdqp",
+  "condition",
+  "rating",
+  "column_break_tkvd",
+  "rating_count",
+  "terms_and_condition",
+  "section_break_fysv",
+  "guest_room",
+  "parking_availability",
+  "pool_availability",
+  "column_break_zajw",
+  "bed_room",
+  "wifi_availability",
+  "air_condition",
+  "extra_bedfacility",
+  "images_section",
+  "image",
+  "locating_data_section",
+  "lat",
+  "lng",
+  "column_break_kcuo",
+  "city",
+  "formatted_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "FAC-",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "facilitie_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Facilitie Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pgmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\nActive\nUnactive"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "price"
+  },
+  {
+   "fieldname": "section_break_gdqp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "\u0645\u0630\u0647\u0644"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "column_break_tkvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "terms_and_condition",
+   "fieldtype": "Long Text",
+   "label": "Terms And Condition"
+  },
+  {
+   "fieldname": "section_break_fysv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "guest_room",
+   "fieldtype": "Int",
+   "label": "Guest Room"
+  },
+  {
+   "fieldname": "bed_room",
+   "fieldtype": "Int",
+   "label": "Bed Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "wifi_availability",
+   "fieldtype": "Check",
+   "label": "Wifi Availability"
+  },
+  {
+   "default": "0",
+   "fieldname": "parking_availability",
+   "fieldtype": "Check",
+   "label": "Parking Availability"
+  },
+  {
+   "default": "0",
+   "fieldname": "pool_availability",
+   "fieldtype": "Check",
+   "label": "Pool Availability"
+  },
+  {
+   "default": "0",
+   "fieldname": "air_condition",
+   "fieldtype": "Check",
+   "label": "Air Condition"
+  },
+  {
+   "default": "0",
+   "fieldname": "extra_bedfacility",
+   "fieldtype": "Check",
+   "label": "Extra BedFacility"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "locating_data_section",
+   "fieldtype": "Section Break",
+   "label": "Locating data"
+  },
+  {
+   "fieldname": "lat",
+   "fieldtype": "Data",
+   "label": "Lat"
+  },
+  {
+   "fieldname": "lng",
+   "fieldtype": "Data",
+   "label": "Lng"
+  },
+  {
+   "fieldname": "column_break_kcuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "formatted_address",
+   "fieldtype": "Data",
+   "label": "Formatted Address"
+  },
+  {
+   "fieldname": "rating_count",
+   "fieldtype": "Currency",
+   "label": "Rating Count",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_zajw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Property Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-24 04:38:51.084897",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "facilities",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "facilitie_name"
+}

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-25 01:54:16.318641",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "hotspot_name",
+  "places_name",
+  "column_break_nqpf",
+  "naming_series",
+  "section_break_bkfw",
+  "image360",
+  "hotspots"
+ ],
+ "fields": [
+  {
+   "fieldname": "hotspot_name",
+   "fieldtype": "Data",
+   "label": "Hotspot name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "HOT-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nqpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bkfw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "places_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Places name",
+   "options": "Places",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hotspots",
+   "fieldtype": "Table",
+   "options": "place rooms"
+  },
+  {
+   "fieldname": "image360",
+   "fieldtype": "Attach Image",
+   "label": "360 images",
+   "make_attachment_public": 1
+  }
+ ],
+ "image_field": "image360",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "max_attachments": 50,
+ "modified": "2024-12-25 09:18:11.829739",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "Hotspot",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "hotspot_name"
+}

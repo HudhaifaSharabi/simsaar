@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-22 02:30:45.772400",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hotspot_name",
+  "position_x",
+  "column_break_iwve",
+  "position_y",
+  "position_z"
+ ],
+ "fields": [
+  {
+   "fieldname": "position_x",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "position X",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iwve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position_y",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "position Y",
+   "reqd": 1
+  },
+  {
+   "fieldname": "position_z",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "position Z",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hotspot_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hotspot name",
+   "options": "Hotspot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-25 08:04:42.529125",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "place rooms",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

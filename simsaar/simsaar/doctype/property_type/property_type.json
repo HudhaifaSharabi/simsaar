@@ -1,24 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-12-21 23:51:28.879198",
+ "creation": "2024-12-24 03:57:20.594046",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_t0uh"
+  "type",
+  "description",
+  "icon"
  ],
  "fields": [
   {
-   "fieldname": "section_break_t0uh",
-   "fieldtype": "Section Break"
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach",
+   "label": "Icon"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-21 23:51:28.879198",
+ "modified": "2024-12-24 04:01:58.930125",
  "modified_by": "Administrator",
  "module": "Simsaar",
- "name": "Place",
+ "name": "Property Type",
  "owner": "Administrator",
  "permissions": [
   {
@@ -32,6 +45,15 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "sort_field": "modified",
