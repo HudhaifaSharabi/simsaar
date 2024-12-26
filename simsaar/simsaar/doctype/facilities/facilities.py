@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class Place(Document):
+class facilities(Document):
 	pass
