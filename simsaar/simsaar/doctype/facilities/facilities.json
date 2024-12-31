@@ -9,9 +9,15 @@
   "naming_series",
   "facilitie_name",
   "property_type",
+  "gallery",
+  "image_2",
+  "image_3",
+  "image_4",
+  "image_5",
   "column_break_pgmz",
   "status",
   "price",
+  "default_hotspot",
   "section_break_gdqp",
   "condition",
   "rating",
@@ -193,11 +199,44 @@
    "fieldtype": "Link",
    "label": "Property Type",
    "options": "Property Type"
+  },
+  {
+   "fieldname": "default_hotspot",
+   "fieldtype": "Link",
+   "label": "Default Horspot",
+   "options": "Hotspot"
+  },
+  {
+   "fieldname": "gallery",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "Image 2"
+  },
+  {
+   "fieldname": "image_3",
+   "fieldtype": "Attach Image",
+   "label": "Image 3"
+  },
+  {
+   "fieldname": "image_4",
+   "fieldtype": "Attach Image",
+   "label": "Image 4"
+  },
+  {
+   "fieldname": "image_5",
+   "fieldtype": "Attach Image",
+   "label": "Image 5"
   }
  ],
+ "image_field": "gallery",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-24 04:38:51.084897",
+ "max_attachments": 6,
+ "modified": "2024-12-31 06:11:03.413887",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "facilities",

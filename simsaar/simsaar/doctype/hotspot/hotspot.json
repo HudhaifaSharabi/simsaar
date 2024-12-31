@@ -7,9 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "hotspot_name",
-  "places_name",
+  "places",
+  "facilitie",
   "column_break_nqpf",
   "naming_series",
+  "place_name",
+  "facilitie_name",
   "section_break_bkfw",
   "image360",
   "hotspots"
@@ -36,14 +39,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "places_name",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Places name",
-   "options": "Places",
-   "reqd": 1
-  },
-  {
    "fieldname": "hotspots",
    "fieldtype": "Table",
    "options": "place rooms"
@@ -53,6 +48,32 @@
    "fieldtype": "Attach Image",
    "label": "360 images",
    "make_attachment_public": 1
+  },
+  {
+   "fieldname": "places",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Places",
+   "options": "Places",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "places.name1",
+   "fieldname": "place_name",
+   "fieldtype": "Data",
+   "label": "Places name"
+  },
+  {
+   "fetch_from": "places.facilitie",
+   "fieldname": "facilitie",
+   "fieldtype": "Data",
+   "label": "Facilitie"
+  },
+  {
+   "fetch_from": "places.facilitie_name",
+   "fieldname": "facilitie_name",
+   "fieldtype": "Data",
+   "label": "Facilitie Name"
   }
  ],
  "image_field": "image360",
@@ -60,7 +81,7 @@
  "links": [],
  "make_attachments_public": 1,
  "max_attachments": 50,
- "modified": "2024-12-25 09:18:11.829739",
+ "modified": "2024-12-31 05:41:12.312093",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Hotspot",

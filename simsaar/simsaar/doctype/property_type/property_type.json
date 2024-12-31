@@ -1,13 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-12-24 03:57:20.594046",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "type",
   "description",
-  "icon"
+  "icon",
+  "naming_series"
  ],
  "fields": [
   {
@@ -24,14 +26,21 @@
    "fieldname": "icon",
    "fieldtype": "Attach",
    "label": "Icon"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "PRT-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-24 04:01:58.930125",
+ "modified": "2024-12-30 00:40:38.358808",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Property Type",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
