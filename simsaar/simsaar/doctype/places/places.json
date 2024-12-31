@@ -8,8 +8,11 @@
  "field_order": [
   "facilitie",
   "naming_series",
+  "image",
   "column_break_mcgy",
-  "name1"
+  "name1",
+  "default_hotspot",
+  "facilitie_name"
  ],
  "fields": [
   {
@@ -47,11 +50,30 @@
   {
    "fieldname": "column_break_mcgy",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_hotspot",
+   "fieldtype": "Link",
+   "label": "Default Hotspot",
+   "options": "Hotspot"
+  },
+  {
+   "fetch_from": "facilitie.facilitie_name",
+   "fieldname": "facilitie_name",
+   "fieldtype": "Data",
+   "label": "Facilitie Name"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-25 02:25:16.213831",
+ "modified": "2024-12-31 05:37:31.995648",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places",
