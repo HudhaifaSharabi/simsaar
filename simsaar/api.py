@@ -40,7 +40,7 @@ def booking(number_of_rooms):
 
     # Create the user
     user = frappe.get_doc({
-        "doctype": "Bokking",
+        "doctype": "Booking",
         "number_of_rooms": number_of_rooms,
         "guest_name":frappe.session.user
         
