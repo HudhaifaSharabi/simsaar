@@ -6,16 +6,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "user_name",
   "guest_name",
-  "room_type",
   "number_of_rooms",
+  "room_type",
   "naming_series",
   "column_break_ggvn",
   "check_in_date",
-  "check_out_date"
+  "check_out_date",
+  "gust_number",
+  "child_number"
  ],
  "fields": [
   {
+   "fetch_from": "user_name.full_name",
    "fieldname": "guest_name",
    "fieldtype": "Data",
    "label": "\u0627\u0633\u0645 \u0627\u0644\u0646\u0632\u064a\u0644"
@@ -50,11 +54,27 @@
   {
    "fieldname": "column_break_ggvn",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Link",
+   "label": "User Name",
+   "options": "User"
+  },
+  {
+   "fieldname": "gust_number",
+   "fieldtype": "Data",
+   "label": "Gust Number"
+  },
+  {
+   "fieldname": "child_number",
+   "fieldtype": "Data",
+   "label": "Child Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 10:31:59.652251",
+ "modified": "2025-01-16 12:37:42.380400",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Booking",
