@@ -36,7 +36,7 @@ def signup(email, name, password, phone, gender):
 
 
 @frappe.whitelist()
-def booking(number_of_rooms,room_type):
+def booking(number_of_rooms, room_type):
     # Get the current user's full name
     user_full_name = frappe.db.get_value("User", frappe.session.user, "full_name")
     
@@ -46,7 +46,7 @@ def booking(number_of_rooms,room_type):
         "number_of_rooms": number_of_rooms,
         "guest_name": user_full_name,  # Set the guest name
         "user_name": frappe.session.user,
-        "room_type":"room_type"
+        "room_type":room_type
     })
     booking_doc.insert(ignore_permissions=True)
 
