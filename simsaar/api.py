@@ -33,3 +33,19 @@ def signup(email, name, password, phone, gender):
         return {"message": "User created and logged in successfully"}
     else:
         frappe.throw("Email already registered.")
+
+
+@frappe.whitelist()
+def booking(number_of_rooms):
+
+    # Create the user
+    user = frappe.get_doc({
+        "doctype": "Bokking",
+        "number_of_rooms": number_of_rooms,
+        "guest_name":frappe.session.user
+        
+    })
+    user.insert(ignore_permissions=True)
+
+    return {"message": "User created and logged in successfully"}
+    
