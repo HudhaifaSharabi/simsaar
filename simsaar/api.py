@@ -37,15 +37,16 @@ def signup(email, name, password, phone, gender):
 
 @frappe.whitelist()
 def booking(number_of_rooms):
-
-    # Create the user
-    user = frappe.get_doc({
+    # Get the current user's full name
+    user_full_name = frappe.db.get_value("User", frappe.session.user, "full_name")
+    
+    # Create the booking document
+    booking_doc = frappe.get_doc({
         "doctype": "Booking",
         "number_of_rooms": number_of_rooms,
-        "guest_name":frappe.session.user
-        
+        "guest_name": user_full_name,  # Set the guest name
+        "user_name": frappe.session.user
     })
-    user.insert(ignore_permissions=True)
+    booking_doc.insert(ignore_permissions=True)
 
-    return {"message": "User created and logged in successfully"}
-    
+    return {"message": "Booking created successfully", "guest_name": user_full_name}
