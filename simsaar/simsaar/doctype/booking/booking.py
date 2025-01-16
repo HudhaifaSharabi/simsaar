@@ -6,7 +6,7 @@ from frappe.model.document import Document
 
 
 class Booking(Document):
-	def validate(self):
+	def before_insert(self):
     # الحصول على اسم المستخدم من الجلسة
 		current_user = frappe.session.user
 
