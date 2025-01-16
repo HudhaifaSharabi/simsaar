@@ -36,7 +36,7 @@ def signup(email, name, password, phone, gender):
 
 
 @frappe.whitelist()
-def booking(number_of_rooms):
+def booking(number_of_rooms,room_type):
     # Get the current user's full name
     user_full_name = frappe.db.get_value("User", frappe.session.user, "full_name")
     
