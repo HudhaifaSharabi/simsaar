@@ -10,12 +10,14 @@
   "guest_name",
   "number_of_rooms",
   "room_type",
+  "type",
   "naming_series",
   "column_break_ggvn",
   "check_in_date",
   "check_out_date",
   "gust_number",
-  "child_number"
+  "child_number",
+  "statues"
  ],
  "fields": [
   {
@@ -70,11 +72,22 @@
    "fieldname": "child_number",
    "fieldtype": "Data",
    "label": "Child Number"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "statues",
+   "fieldtype": "Select",
+   "label": "Statues",
+   "options": "Pending\nComplete"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 12:37:42.380400",
+ "modified": "2025-01-16 13:17:07.618166",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Booking",
