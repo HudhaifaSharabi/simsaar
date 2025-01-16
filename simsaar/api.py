@@ -45,7 +45,8 @@ def booking(number_of_rooms):
         "doctype": "Booking",
         "number_of_rooms": number_of_rooms,
         "guest_name": user_full_name,  # Set the guest name
-        "user_name": frappe.session.user
+        "user_name": frappe.session.user,
+        "room_type":"room_type"
     })
     booking_doc.insert(ignore_permissions=True)
 
