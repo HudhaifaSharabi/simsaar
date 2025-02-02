@@ -243,3 +243,25 @@ app_include_css = "/assets/simsaar/css/simsaar.css"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+from simsaar.simsaar.utils.whatsapp import initialize_whatsapp_session, send_queued_messages
+scheduled_events = {
+    "daily": [
+        {"simsaar.simsaar.utils.whatsapp.initialize_whatsapp_session": {}}  # Daily session refresh
+    ],
+    "cron": {
+        "*/5 * * * *": [
+            "simsaar.simsaar.utils.whatsapp.send_queued_messages"  # Send queued messages every 5 mins
+        ]
+    }
+}
+whitelisted_controllers = [
+    "simsaar.simsaar.utils.whatsapp.initialize_whatsapp_session",
+    "simsaar.simsaar.utils.whatsapp.send_queued_messages"
+]
+scheduled_events = {
+    "cron": {
+        "*/5 * * * *": [
+            "simsaar.simsaar.utils.whatsapp.send_queued_messages"
+        ]
+    }
+}
