@@ -87,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 13:17:07.618166",
+ "modified": "2025-01-29 16:37:26.353895",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Booking",
@@ -105,6 +105,12 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "read": 1,
+   "role": "Guest"
   }
  ],
  "sort_field": "modified",
