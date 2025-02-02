@@ -36,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-29 16:38:48.121662",
+ "modified": "2024-12-30 00:40:38.358808",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Property Type",
@@ -56,8 +56,13 @@
    "write": 1
   },
   {
+   "email": 1,
+   "export": 1,
+   "print": 1,
    "read": 1,
-   "role": "Guest"
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "sort_field": "modified",
