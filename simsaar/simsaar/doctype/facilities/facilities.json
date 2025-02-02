@@ -236,7 +236,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 6,
- "modified": "2025-01-29 16:37:46.269184",
+ "modified": "2024-12-31 06:11:03.413887",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "facilities",
@@ -256,8 +256,16 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
    "read": 1,
-   "role": "Guest"
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
   }
  ],
  "show_title_field_in_link": 1,
