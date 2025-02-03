@@ -51,6 +51,10 @@
   {
    "fieldname": "facilities",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Facilities",
    "options": "facilities",
    "reqd": 1
@@ -58,7 +62,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 00:41:34.864120",
+ "modified": "2025-02-04 00:55:07.313731",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Facilities Surroundings",
