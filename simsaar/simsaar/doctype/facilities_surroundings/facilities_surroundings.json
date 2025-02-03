@@ -62,7 +62,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 00:55:07.313731",
+ "modified": "2025-02-04 01:09:53.730348",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Facilities Surroundings",
@@ -80,6 +80,10 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Guest"
   }
  ],
  "sort_field": "modified",
