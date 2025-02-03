@@ -1,5 +1,6 @@
 import frappe
 from frappe.auth import LoginManager
+from frappe import _
 
 @frappe.whitelist(allow_guest=True)
 def signup(email, name, password, phone, gender):
@@ -56,3 +57,18 @@ def booking(number_of_rooms, room_type, type, check_in_date, check_out_date, gus
     booking_doc.insert(ignore_permissions=True)
 
     return {"message": "Booking created successfully", "guest_name": user_full_name}
+    
+@frappe.whitelist(allow_guest=True)
+def get_all_facilities_surroundings():
+    """Fetch all Facilities Surroundings with child table (table_nnki)."""
+    facilities = frappe.get_all("Facilities Surroundings", fields=["*"])
+
+    for facility in facilities:
+        # Fetch child table data (Surroundings)
+        facility["sub_surroundings"] = frappe.get_all(
+            "Surroundings", 
+            filters={"parent": facility["name"]}, 
+            fields=["*"]
+        )
+
+    return facilities
