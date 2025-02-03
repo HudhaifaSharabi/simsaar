@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "facilities",
   "column_break_ieaa",
   "surroundings",
   "section_break_iget",
@@ -46,11 +47,18 @@
    "in_standard_filter": 1,
    "options": "Surroundings",
    "reqd": 1
+  },
+  {
+   "fieldname": "facilities",
+   "fieldtype": "Link",
+   "label": "Facilities",
+   "options": "facilities",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-03 23:52:35.235131",
+ "modified": "2025-02-04 00:41:34.864120",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Facilities Surroundings",
