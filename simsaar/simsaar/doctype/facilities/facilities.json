@@ -9,30 +9,23 @@
   "naming_series",
   "facilitie_name",
   "property_type",
-  "gallery",
-  "image_2",
-  "image_3",
-  "image_4",
-  "image_5",
-  "column_break_pgmz",
-  "status",
-  "price",
   "default_hotspot",
-  "section_break_gdqp",
-  "condition",
+  "column_break_pgmz",
   "rating",
-  "column_break_tkvd",
-  "rating_count",
+  "status",
+  "gallary_section",
+  "gallery",
+  "image_3",
+  "column_break_hctb",
+  "image_2",
+  "image_4",
+  "column_break_ljvv",
+  "image_5",
+  "section_break_ikce",
+  "features",
+  "section_break_eqhp",
   "terms_and_condition",
-  "section_break_fysv",
-  "guest_room",
-  "parking_availability",
-  "pool_availability",
-  "column_break_zajw",
-  "bed_room",
-  "wifi_availability",
-  "air_condition",
-  "extra_bedfacility",
+  "description",
   "images_section",
   "image",
   "locating_data_section",
@@ -70,22 +63,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "status",
-   "options": "\nActive\nUnactive"
-  },
-  {
-   "fieldname": "price",
-   "fieldtype": "Data",
-   "label": "price"
-  },
-  {
-   "fieldname": "section_break_gdqp",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "condition",
-   "fieldtype": "Select",
-   "label": "Condition",
-   "options": "\u0645\u0630\u0647\u0644"
+   "options": "\n\u0646\u0634\u0637\n\u0645\u0648\u0642\u0641"
   },
   {
    "fieldname": "rating",
@@ -93,57 +71,9 @@
    "label": "Rating"
   },
   {
-   "fieldname": "column_break_tkvd",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "terms_and_condition",
    "fieldtype": "Long Text",
    "label": "Terms And Condition"
-  },
-  {
-   "fieldname": "section_break_fysv",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "guest_room",
-   "fieldtype": "Int",
-   "label": "Guest Room"
-  },
-  {
-   "fieldname": "bed_room",
-   "fieldtype": "Int",
-   "label": "Bed Room"
-  },
-  {
-   "default": "0",
-   "fieldname": "wifi_availability",
-   "fieldtype": "Check",
-   "label": "Wifi Availability"
-  },
-  {
-   "default": "0",
-   "fieldname": "parking_availability",
-   "fieldtype": "Check",
-   "label": "Parking Availability"
-  },
-  {
-   "default": "0",
-   "fieldname": "pool_availability",
-   "fieldtype": "Check",
-   "label": "Pool Availability"
-  },
-  {
-   "default": "0",
-   "fieldname": "air_condition",
-   "fieldtype": "Check",
-   "label": "Air Condition"
-  },
-  {
-   "default": "0",
-   "fieldname": "extra_bedfacility",
-   "fieldtype": "Check",
-   "label": "Extra BedFacility"
   },
   {
    "fieldname": "image",
@@ -178,16 +108,6 @@
    "fieldname": "formatted_address",
    "fieldtype": "Data",
    "label": "Formatted Address"
-  },
-  {
-   "fieldname": "rating_count",
-   "fieldtype": "Currency",
-   "label": "Rating Count",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "column_break_zajw",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "images_section",
@@ -230,13 +150,46 @@
    "fieldname": "image_5",
    "fieldtype": "Attach Image",
    "label": "Image 5"
+  },
+  {
+   "fieldname": "section_break_ikce",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u062e\u0635\u0627\u0626\u0635"
+  },
+  {
+   "fieldname": "features",
+   "fieldtype": "Table",
+   "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u062e\u0635\u0627\u0626\u0635",
+   "options": "Facilities Features"
+  },
+  {
+   "fieldname": "section_break_eqhp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "gallary_section",
+   "fieldtype": "Section Break",
+   "label": "Gallary"
+  },
+  {
+   "fieldname": "column_break_hctb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ljvv",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "gallery",
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 6,
- "modified": "2024-12-31 06:11:03.413887",
+ "modified": "2025-02-03 23:54:04.615722",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "facilities",
@@ -256,21 +209,15 @@
    "write": 1
   },
   {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
    "read": 1,
-   "report": 1,
-   "role": "Guest",
-   "share": 1,
-   "write": 1
+   "role": "Guest"
   }
  ],
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "facilitie_name"
+ "title_field": "facilitie_name",
+ "track_changes": 1,
+ "track_seen": 1
 }

@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-02-03 23:41:51.233645",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_ieaa",
+  "surroundings",
+  "section_break_iget",
+  "table_nnki"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "FAS-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ieaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surroundings",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Surroundings",
+   "options": "Surroundings Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_iget",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_nnki",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "options": "Surroundings",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-03 23:52:35.235131",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "Facilities Surroundings",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-03 22:02:07.287125",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "features",
+  "column_break_vdlq",
+  "icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "features",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Features",
+   "options": "Features",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vdlq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "features.image",
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Icon",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-03 22:02:07.287125",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "Place Features",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -12,7 +12,9 @@
   "column_break_mcgy",
   "name1",
   "default_hotspot",
-  "facilitie_name"
+  "facilitie_name",
+  "\u062e\u0635\u0627\u0626\u0635_section",
+  "features"
  ],
  "fields": [
   {
@@ -68,12 +70,25 @@
    "fieldname": "facilitie_name",
    "fieldtype": "Data",
    "label": "Facilitie Name"
+  },
+  {
+   "fieldname": "\u062e\u0635\u0627\u0626\u0635_section",
+   "fieldtype": "Section Break",
+   "label": "\u062e\u0635\u0627\u0626\u0635"
+  },
+  {
+   "description": "\u0630\u0643\u0631 \u0627\u0644\u0627\u0634\u064a\u0627\u0621 \u0627\u0644\u0645\u062a\u0627\u062d\u0629 \u0642\u064a \u0627\u0644\u063a\u0631\u0641",
+   "fieldname": "features",
+   "fieldtype": "Table",
+   "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u062e\u0635\u0627\u0626\u0635",
+   "options": "Place Features",
+   "reqd": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 13:08:26.406713",
+ "modified": "2025-02-03 22:03:27.661438",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places",
@@ -93,16 +108,8 @@
    "write": 1
   },
   {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
    "read": 1,
-   "report": 1,
-   "role": "Guest",
-   "share": 1,
-   "write": 1
+   "role": "Guest"
   }
  ],
  "show_title_field_in_link": 1,

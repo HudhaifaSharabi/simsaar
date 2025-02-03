@@ -2,44 +2,36 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2024-12-24 03:57:20.594046",
+ "creation": "2025-02-03 23:38:48.658368",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "type",
-  "description",
-  "icon",
-  "naming_series"
+  "naming_series",
+  "title"
  ],
  "fields": [
-  {
-   "fieldname": "type",
-   "fieldtype": "Data",
-   "label": "Type"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "icon",
-   "fieldtype": "Attach",
-   "label": "Icon"
-  },
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
    "label": "Naming Series",
-   "options": "PRT-"
+   "options": "SUR-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-29 16:38:48.121662",
+ "modified": "2025-02-03 23:40:51.894031",
  "modified_by": "Administrator",
  "module": "Simsaar",
- "name": "Property Type",
+ "name": "Surroundings Category",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
@@ -54,10 +46,6 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "read": 1,
-   "role": "Guest"
   }
  ],
  "sort_field": "modified",
