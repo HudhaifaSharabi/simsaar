@@ -28,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-03 23:40:51.894031",
+ "modified": "2025-02-04 00:48:20.587991",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Surroundings Category",
@@ -48,7 +48,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title",
+ "translated_doctype": 1
 }
