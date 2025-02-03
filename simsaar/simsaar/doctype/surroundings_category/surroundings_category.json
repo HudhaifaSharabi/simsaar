@@ -6,7 +6,9 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "title",
+  "column_break_dgbw",
+  "status"
  ],
  "fields": [
   {
@@ -16,11 +18,21 @@
    "label": "Title",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_dgbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\u0646\u0634\u0637\n\u0645\u0644\u063a\u064a"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 01:44:48.369249",
+ "modified": "2025-02-04 01:58:42.202448",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Surroundings Category",
