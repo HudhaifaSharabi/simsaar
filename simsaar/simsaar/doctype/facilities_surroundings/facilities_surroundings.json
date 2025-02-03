@@ -11,10 +11,8 @@
   "naming_series",
   "column_break_ieaa",
   "surroundings",
-  "section_break_iget",
-  "sub_surroundings",
-  "column_break_zpqm",
-  "distance"
+  "section_break_mbsz",
+  "sub_surroundings"
  ],
  "fields": [
   {
@@ -40,10 +38,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "section_break_iget",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "facilities",
    "fieldtype": "Link",
    "in_filter": 1,
@@ -55,31 +49,26 @@
    "reqd": 1
   },
   {
-   "fieldname": "sub_surroundings",
-   "fieldtype": "Data",
-   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0639\u0644\u0645",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_zpqm",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "distance",
-   "fieldtype": "Data",
-   "label": "\u0627\u0644\u0645\u0633\u0627\u0641\u0629",
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "\u0646\u0634\u0637\n\u0645\u0644\u063a\u064a"
+  },
+  {
+   "fieldname": "section_break_mbsz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_surroundings",
+   "fieldtype": "Table",
+   "label": "Sub_Surroundings",
+   "options": "Surroundings",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 01:58:51.000340",
+ "modified": "2025-02-04 02:16:48.254388",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Facilities Surroundings",
