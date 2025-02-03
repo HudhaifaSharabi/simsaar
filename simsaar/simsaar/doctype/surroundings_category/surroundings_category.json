@@ -28,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 00:48:20.587991",
+ "modified": "2025-02-04 01:10:16.378460",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Surroundings Category",
@@ -46,6 +46,10 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Guest"
   }
  ],
  "show_title_field_in_link": 1,
