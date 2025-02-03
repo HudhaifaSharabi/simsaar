@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestSurroundings(FrappeTestCase):
+class TestRuleCategory(FrappeTestCase):
 	pass

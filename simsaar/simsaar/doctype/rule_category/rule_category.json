@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:title",
- "creation": "2025-02-03 23:38:48.658368",
+ "creation": "2025-02-04 01:43:58.971541",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -20,10 +20,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 01:44:48.369249",
+ "modified": "2025-02-04 01:45:17.039925",
  "modified_by": "Administrator",
  "module": "Simsaar",
- "name": "Surroundings Category",
+ "name": "Rule Category",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -38,16 +38,9 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "read": 1,
-   "role": "Guest"
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "title",
- "translated_doctype": 1
+ "states": []
 }
