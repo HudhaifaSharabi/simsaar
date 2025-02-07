@@ -59,9 +59,9 @@ def booking(number_of_rooms, room_type, type, check_in_date, check_out_date, gus
     return {"message": "Booking created successfully", "guest_name": user_full_name}
     
 @frappe.whitelist(allow_guest=True)
-def get_all_facilities_surroundings():
+def get_all_facilities_surroundings(status, facilitie):
     """Fetch all Facilities Surroundings with child table (table_nnki)."""
-    facilities = frappe.get_all("Facilities Surroundings", fields=["*"])
+    facilities = frappe.get_all("Facilities Surroundings", fields=["*"], filters={"status": status, "facilitie": facilitie})
 
     for facility in facilities:
         # Fetch child table data (Surroundings)
