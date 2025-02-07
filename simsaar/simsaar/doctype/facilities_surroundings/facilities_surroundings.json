@@ -6,7 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "facilities",
+  "facilitie",
   "status",
   "naming_series",
   "column_break_ieaa",
@@ -38,17 +38,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "facilities",
-   "fieldtype": "Link",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "\u0627\u0644\u0645\u0646\u0634\u0623\u0647",
-   "options": "facilities",
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -64,11 +53,22 @@
    "label": "Sub_Surroundings",
    "options": "Surroundings",
    "reqd": 1
+  },
+  {
+   "fieldname": "facilitie",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0646\u0634\u0623\u0647",
+   "options": "facilities",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 02:16:48.254388",
+ "modified": "2025-02-08 01:24:48.693625",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Facilities Surroundings",
