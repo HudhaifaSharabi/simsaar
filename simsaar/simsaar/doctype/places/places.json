@@ -9,12 +9,21 @@
   "facilitie",
   "naming_series",
   "image",
+  "room_area",
   "column_break_mcgy",
   "name1",
   "default_hotspot",
   "facilitie_name",
+  "room_area_advice",
+  "section_break_uvlg",
+  "description",
   "\u062e\u0635\u0627\u0626\u0635_section",
-  "features"
+  "features",
+  "feature_description",
+  "section_break_ikff",
+  "booking_terms",
+  "section_break_nnvs",
+  "gallary"
  ],
  "fields": [
   {
@@ -56,7 +65,7 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "Image",
+   "label": "\u0627\u0644\u0635\u0648\u0631\u0647 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
    "reqd": 1
   },
   {
@@ -83,12 +92,65 @@
    "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u062e\u0635\u0627\u0626\u0635",
    "options": "Place Features",
    "reqd": 1
+  },
+  {
+   "fieldname": "gallary",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0635\u0648\u0631",
+   "options": "Place Gallary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_uvlg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "description": "\u064a\u062a\u0645 \u0639\u0631\u0636\u0647\u0627 \u0641\u064a \u0642\u0627\u0626\u0645\u0629 \u0643\u0644 \u0627\u0644\u063a\u0631\u0641",
+   "fieldname": "feature_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "\u0648\u0635\u0641 \u0627\u0644\u062e\u0635\u0627\u0626\u0635",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_nnvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ikff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "booking_terms",
+   "fieldtype": "Table",
+   "label": "Booking Terms",
+   "options": "Booking Terms",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_area",
+   "fieldtype": "Data",
+   "label": "Room area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_area_advice",
+   "fieldtype": "Data",
+   "label": "Room area advice",
+   "reqd": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-03 22:03:27.661438",
+ "modified": "2025-02-09 01:55:29.185113",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places",
