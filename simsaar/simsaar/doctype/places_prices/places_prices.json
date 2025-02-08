@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-02-09 02:32:36.995750",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "place",
+  "column_break_ilbc",
+  "price_after",
+  "price_before",
+  "status",
+  "section_break_irjt",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series ",
+   "options": "PLP-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "price_after",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price after",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ilbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_before",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price before",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_irjt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Place",
+   "options": "Places",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\u0646\u0634\u0637\n\u0645\u0644\u063a\u064a",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-09 02:37:48.467732",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "Places Prices",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

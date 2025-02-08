@@ -69,7 +69,6 @@ def get_all_facilities_surroundings(status, facilitie):
             "Surroundings",
             filters={"parent": facility["name"]}, 
             fields=["*"]
-            the best 
         )
 
     return facilities
