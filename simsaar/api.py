@@ -66,9 +66,10 @@ def get_all_facilities_surroundings(status, facilitie):
     for facility in facilities:
         # Fetch child table data (Surroundings)
         facility["sub_surroundings"] = frappe.get_all(
-            "Surroundings", 
+            "Surroundings",
             filters={"parent": facility["name"]}, 
             fields=["*"]
+            the best 
         )
 
     return facilities

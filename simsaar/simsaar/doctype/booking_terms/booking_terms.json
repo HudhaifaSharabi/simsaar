@@ -1,13 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-03 21:56:50.364705",
+ "creation": "2025-02-09 01:52:32.884977",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "features",
-  "features_name",
+  "name1",
   "column_break_vdlq",
   "icon"
  ],
@@ -21,6 +21,13 @@
    "reqd": 1
   },
   {
+   "fetch_from": "features.features",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
    "fieldname": "column_break_vdlq",
    "fieldtype": "Column Break"
   },
@@ -32,23 +39,15 @@
    "label": "Icon",
    "read_only": 1,
    "reqd": 1
-  },
-  {
-   "fetch_from": "features.features",
-   "fieldname": "features_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Features Name",
-   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-08 01:49:49.798186",
+ "modified": "2025-02-09 01:52:32.884977",
  "modified_by": "Administrator",
  "module": "Simsaar",
- "name": "Facilities Features",
+ "name": "Booking Terms",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
