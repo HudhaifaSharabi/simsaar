@@ -24,13 +24,15 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": " Name"
+   "in_list_view": 1,
+   "label": " Name",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-09 01:13:39.122124",
+ "modified": "2025-02-09 03:08:43.776094",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Place Gallary",
