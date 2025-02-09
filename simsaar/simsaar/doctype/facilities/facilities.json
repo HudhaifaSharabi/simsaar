@@ -13,6 +13,13 @@
   "column_break_pgmz",
   "rating",
   "status",
+  "locating_data_section",
+  "lat",
+  "lng",
+  "column_break_kcuo",
+  "governorate",
+  "formatted_address",
+  "governorate_name",
   "gallary_section",
   "gallery",
   "image_3",
@@ -27,13 +34,7 @@
   "terms_and_condition",
   "description",
   "images_section",
-  "image",
-  "locating_data_section",
-  "lat",
-  "lng",
-  "column_break_kcuo",
-  "city",
-  "formatted_address"
+  "image"
  ],
  "fields": [
   {
@@ -72,13 +73,15 @@
   },
   {
    "fieldname": "terms_and_condition",
-   "fieldtype": "Long Text",
-   "label": "Terms And Condition"
+   "fieldtype": "Text Editor",
+   "label": "Terms And Condition",
+   "reqd": 1
   },
   {
    "fieldname": "image",
    "fieldtype": "Attach",
-   "label": "Image"
+   "label": "Image",
+   "reqd": 1
   },
   {
    "fieldname": "locating_data_section",
@@ -88,26 +91,24 @@
   {
    "fieldname": "lat",
    "fieldtype": "Data",
-   "label": "Lat"
+   "label": "Lat",
+   "reqd": 1
   },
   {
    "fieldname": "lng",
    "fieldtype": "Data",
-   "label": "Lng"
+   "label": "Lng",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_kcuo",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
    "fieldname": "formatted_address",
    "fieldtype": "Data",
-   "label": "Formatted Address"
+   "label": "Formatted Address",
+   "reqd": 1
   },
   {
    "fieldname": "images_section",
@@ -118,13 +119,15 @@
    "fieldname": "property_type",
    "fieldtype": "Link",
    "label": "Property Type",
-   "options": "Property Type"
+   "options": "Property Type",
+   "reqd": 1
   },
   {
    "fieldname": "default_hotspot",
    "fieldtype": "Link",
    "label": "Default Horspot",
-   "options": "Hotspot"
+   "options": "Hotspot",
+   "reqd": 1
   },
   {
    "fieldname": "gallery",
@@ -160,7 +163,8 @@
    "fieldname": "features",
    "fieldtype": "Table",
    "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u062e\u0635\u0627\u0626\u0635",
-   "options": "Facilities Features"
+   "options": "Facilities Features",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_eqhp",
@@ -169,7 +173,8 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
-   "label": "Description"
+   "label": "Description",
+   "reqd": 1
   },
   {
    "fieldname": "gallary_section",
@@ -183,13 +188,28 @@
   {
    "fieldname": "column_break_ljvv",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorates",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "governorate.title",
+   "fieldname": "governorate_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Governorate Name",
+   "read_only": 1
   }
  ],
  "image_field": "gallery",
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 6,
- "modified": "2025-02-03 23:54:04.615722",
+ "modified": "2025-02-09 03:08:17.535568",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "facilities",

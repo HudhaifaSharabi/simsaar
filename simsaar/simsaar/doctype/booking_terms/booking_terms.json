@@ -16,12 +16,12 @@
    "fieldname": "features",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Features",
-   "options": "Features",
+   "label": "Term",
+   "options": "Terms",
    "reqd": 1
   },
   {
-   "fetch_from": "features.features",
+   "fetch_from": "features.term",
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Name",
@@ -32,7 +32,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "features.image",
+   "fetch_from": "features.icon",
    "fieldname": "icon",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -44,7 +44,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-09 01:52:32.884977",
+ "modified": "2025-02-09 03:12:21.324206",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Booking Terms",
