@@ -14,7 +14,9 @@
   "price_before",
   "status",
   "section_break_irjt",
-  "description"
+  "description",
+  "section_break_ifvn",
+  "table_tmfk"
  ],
  "fields": [
   {
@@ -73,11 +75,20 @@
    "label": "Status",
    "options": "\u0646\u0634\u0637\n\u0645\u0644\u063a\u064a",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ifvn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_tmfk",
+   "fieldtype": "Table",
+   "options": "Place Price Features"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-09 02:37:48.467732",
+ "modified": "2025-02-09 03:28:24.330717",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places Prices",

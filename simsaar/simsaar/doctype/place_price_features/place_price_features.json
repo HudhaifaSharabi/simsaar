@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-09 03:23:43.740814",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "price_features",
+  "icon",
+  "price_features_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "price_features",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Price Features",
+   "options": "Price Features",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "price_features.icon",
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Icon",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "price_features.title",
+   "fieldname": "price_features_name",
+   "fieldtype": "Data",
+   "label": "Price Features Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-09 03:32:35.404317",
+ "modified_by": "Administrator",
+ "module": "Simsaar",
+ "name": "Place Price Features",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
