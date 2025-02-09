@@ -6,17 +6,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "\u0627\u0644\u0635\u0648\u0631\u0629",
+  "image",
   "column_break_gzza",
   "name1"
  ],
  "fields": [
-  {
-   "fieldname": "\u0627\u0644\u0635\u0648\u0631\u0629",
-   "fieldtype": "Attach",
-   "in_list_view": 1,
-   "label": "\u0627\u0644\u0635\u0648\u0631\u0629"
-  },
   {
    "fieldname": "column_break_gzza",
    "fieldtype": "Column Break"
@@ -27,12 +21,18 @@
    "in_list_view": 1,
    "label": " Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0635\u0648\u0631\u0629"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-09 03:08:43.776094",
+ "modified": "2025-02-10 01:20:23.109787",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Place Gallary",
