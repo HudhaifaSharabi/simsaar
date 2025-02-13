@@ -88,7 +88,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-09 03:28:24.330717",
+ "modified": "2025-02-14 02:08:55.405287",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places Prices",
@@ -106,6 +106,10 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Guest"
   }
  ],
  "sort_field": "modified",
