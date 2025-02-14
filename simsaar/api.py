@@ -1,6 +1,8 @@
 import frappe
 from frappe.auth import LoginManager
 from frappe import _
+from datetime import datetime
+
 
 @frappe.whitelist(allow_guest=True)
 def signup(email, name, password, phone, gender):
@@ -36,8 +38,6 @@ def signup(email, name, password, phone, gender):
         frappe.throw("Email already registered.")
 
 
-import frappe
-from datetime import datetime
 
 @frappe.whitelist(allow_guest=True)
 def booking(number_of_rooms, room_type, type, check_in_date, check_out_date, gust_number, child_number, guest_name=None, mobile_number=None):
