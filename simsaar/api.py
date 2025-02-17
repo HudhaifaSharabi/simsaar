@@ -210,7 +210,7 @@ def verify_otp(phone_number, otp):
         return {"success": False, "error": str(e)}
 
 @frappe.whitelist(allow_guest=True)
-def register_user(phone_number, full_name, gender, birth_date):
+def register_user(phone_number, full_name, gender=None, birth_date=None):
     """
     Create a new user and log them in.
     """
