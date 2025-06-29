@@ -15,6 +15,7 @@
   "facilitie",
   "facilitie_name",
   "room_area_advice",
+  "place_type",
   "status",
   "section_break_uvlg",
   "description",
@@ -144,20 +145,26 @@
   {
    "fieldname": "room_area_advice",
    "fieldtype": "Data",
-   "label": "Room area advice",
-   "reqd": 1
+   "label": "Room area advice"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "\u0646\u0634\u0637\n\u0645\u0644\u063a\u064a"
+  },
+  {
+   "fieldname": "place_type",
+   "fieldtype": "Select",
+   "label": "Place Type",
+   "options": "\n\u063a\u0631\u0641\u0629\n\u0645\u0631\u0641\u0642\n\u062c\u0646\u0627\u062d\n\u0637\u064a\u0631\u0645\u0627\u0646\u0647\n\u0634\u0642\u0647",
+   "reqd": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-15 22:32:50.674838",
+ "modified": "2025-04-29 14:37:03.366449",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places",

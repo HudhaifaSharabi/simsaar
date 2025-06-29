@@ -2,44 +2,49 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2024-12-24 03:57:20.594046",
+ "creation": "2025-04-29 14:08:55.655019",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "type",
-  "description",
-  "icon",
-  "naming_series"
+  "title",
+  "naming_series",
+  "column_break_undv",
+  "is_active"
  ],
  "fields": [
   {
-   "fieldname": "type",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Type"
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
+   "fieldname": "column_break_undv",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "icon",
-   "fieldtype": "Attach",
-   "label": "Icon"
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active\t"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Naming Series",
-   "options": "PRT-"
+   "options": "POT-",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-14 01:42:48.309973",
+ "modified": "2025-04-29 14:23:36.388335",
  "modified_by": "Administrator",
  "module": "Simsaar",
- "name": "Property Type",
+ "name": "Policy Type",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
@@ -54,16 +59,10 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "read": 1,
-   "role": "Guest"
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "type",
- "translated_doctype": 1
+ "title_field": "title"
 }

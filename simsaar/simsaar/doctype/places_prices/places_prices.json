@@ -9,10 +9,11 @@
   "naming_series",
   "title",
   "place",
+  "status",
   "column_break_ilbc",
   "price_after",
   "price_before",
-  "status",
+  "price_duration",
   "section_break_irjt",
   "description",
   "section_break_ifvn",
@@ -84,11 +85,16 @@
    "fieldname": "table_tmfk",
    "fieldtype": "Table",
    "options": "Place Price Features"
+  },
+  {
+   "fieldname": "price_duration",
+   "fieldtype": "Long Text",
+   "label": "Price Duration"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-14 02:08:55.405287",
+ "modified": "2025-02-28 00:54:08.296165",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Places Prices",
