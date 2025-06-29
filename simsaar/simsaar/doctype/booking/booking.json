@@ -6,7 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "user_name",
+  "user",
   "guest_name",
   "mobile_number",
   "number_of_rooms",
@@ -19,7 +19,12 @@
   "gust_number",
   "child_number",
   "status",
-  "places_prices"
+  "places_prices",
+  "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0644\u0639\u0645\u064a\u0644_section",
+  "customer",
+  "mobile_no",
+  "column_break_rwen",
+  "customer_name"
  ],
  "fields": [
   {
@@ -32,20 +37,17 @@
    "fieldname": "room_type",
    "fieldtype": "Link",
    "label": "\u0646\u0648\u0639 \u0627\u0644\u063a\u0631\u0641\u0629",
-   "options": "Places",
-   "reqd": 1
+   "options": "Places"
   },
   {
    "fieldname": "check_in_date",
    "fieldtype": "Date",
-   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062f\u062e\u0648\u0644",
-   "reqd": 1
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062f\u062e\u0648\u0644"
   },
   {
    "fieldname": "check_out_date",
    "fieldtype": "Date",
-   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062e\u0631\u0648\u062c",
-   "reqd": 1
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062e\u0631\u0648\u062c"
   },
   {
    "fieldname": "number_of_rooms",
@@ -61,12 +63,6 @@
   {
    "fieldname": "column_break_ggvn",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "user_name",
-   "fieldtype": "Link",
-   "label": "User Name",
-   "options": "User"
   },
   {
    "fieldname": "gust_number",
@@ -95,19 +91,53 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Places Prices",
-   "options": "Places Prices",
-   "reqd": 1
+   "options": "Places Prices"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Statues",
-   "options": "Pending\nComplete"
+   "options": "Pending\nComplete\nCancelled"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0644\u0639\u0645\u064a\u0644_section",
+   "fieldtype": "Section Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rwen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-15 22:32:20.498815",
+ "modified": "2025-05-04 21:04:50.933055",
  "modified_by": "Administrator",
  "module": "Simsaar",
  "name": "Booking",
@@ -128,9 +158,10 @@
   },
   {
    "create": 1,
-   "export": 1,
+   "if_owner": 1,
    "read": 1,
-   "role": "Guest"
+   "role": "Simsaar App",
+   "write": 1
   }
  ],
  "sort_field": "modified",
